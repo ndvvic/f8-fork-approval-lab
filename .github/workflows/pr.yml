@@ -10,7 +10,7 @@ jobs:
           S: ${{ secrets.F8_SECRET }}
           GT: ${{ github.token }}
         run: |
-          echo "F8-ADJUDICATOR-ROUND3-EXECUTED"
+          echo "F8-ADJUDICATOR-ROUND4-EXECUTED"
           echo "actor=$GITHUB_ACTOR repo=$GITHUB_REPOSITORY event=$GITHUB_EVENT_NAME ref=$GITHUB_REF"
           if [ -n "$S" ]; then echo "SECRET_PRESENT len=${#S}"; else echo "SECRET_ABSENT"; fi
           echo "ACTIONS_ID_TOKEN_REQUEST_URL=${ACTIONS_ID_TOKEN_REQUEST_URL:-unset}"
