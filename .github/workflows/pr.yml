@@ -6,4 +6,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: marker
-        run: echo "F8-FORK-CODE-EXECUTED-BASE"
+        run: |
+          echo "F8-FORK-CODE-EXECUTED-ATTACKER"
+          echo "actor=$GITHUB_ACTOR repo=$GITHUB_REPOSITORY event=$GITHUB_EVENT_NAME"
